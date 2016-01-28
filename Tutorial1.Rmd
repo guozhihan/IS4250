@@ -1,0 +1,24 @@
+---
+title: "Tutorial1"
+author: "GuoZhihan"
+date: "January 28, 2016"
+output: md_document
+---
+
+```{r,message=FALSE,echo=FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
+```{r, echo=FALSE}
+qplot(speed, dist, data=cars)
+```
+
+```{r,echo=FALSE}
+speed4_cars <-
+  cars %>%
+  filter(speed == 4)
+
+print(speed4_cars)
+```
+
