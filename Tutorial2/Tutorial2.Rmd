@@ -1,0 +1,18 @@
+---
+title: "Tutorial2"
+author: "GuoZhihan"
+date: "January 29, 2016"
+output: md_document
+---
+
+```{r,message=FALSE,echo=FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
+```{r, echo=FALSE}
+labs<-read.csv("C:/Users/Guo Zhihan/Dropbox/IS Year4 Sem2/IS4250/Tutorials/labs.csv")
+count(filter(labs, SvcSat == "Y"))/length(labs$SvcSat)
+mean(labs$WaitTime)
+```
+
